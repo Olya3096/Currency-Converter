@@ -16,7 +16,7 @@ const isDataValid = (data) => {
 const getCurrency = async () => {
   const amount = form.amount.value;
   const currency = form.currency.value;
-  const URL = `http://api.nbp.pl/api/exchangerates/rates/a/${currency}`;
+  const URL = `https://api.nbp.pl/api/exchangerates/rates/a/${currency}`;
   try {
     const response = await fetch(URL);
     const data = await response.json();
